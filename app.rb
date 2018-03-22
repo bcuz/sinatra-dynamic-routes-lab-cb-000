@@ -10,4 +10,8 @@ class App < Sinatra::Base
     @user_name = params[:number].to_i
     "#{@user_name ** 2}"
   end
+
+  get "/say/:number/:phrase" do
+    
+  end
 end
