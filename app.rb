@@ -1,4 +1,5 @@
 require_relative 'config/environment'
+require_relative 'config/environment'
 
 class App < Sinatra::Base
   # Write your code here!
@@ -29,5 +30,7 @@ class App < Sinatra::Base
   get "/:operation/:number1/:number2" do
     # if statement
     @operation = params[:operation]
+    @number1 = params[:number1]
+    @number2 = params[:number2]
   end
 end
